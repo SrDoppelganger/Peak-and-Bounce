@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://bujccrvwpsuhg"]
 
-[ext_resource type="Texture2D" uid="uid://cthunlli7al2s" path="res://assets/bunny.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://ca6u60mxbrxvv" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://bwf4gl0c6g2pv" path="res://assets/BEEG bunny.png" id="2_g2els"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
-size = Vector2(20, 19)
+size = Vector2(18, 15.5)
 
 [node name="player" type="CharacterBody2D" unique_id=508589565]
 script = ExtResource("1_g2els")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2088029657]
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("1_3vyb7")
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("2_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=988454357]
-position = Vector2(-1, 9.5)
+position = Vector2(0, 7.75)
 shape = SubResource("RectangleShape2D_g2els")
